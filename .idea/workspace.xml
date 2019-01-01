@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6e1fee-552f-4fa3-8ef0-b1650d5e87df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LumenAuthorApi/app/Traits/ApiResponser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LumenAuthorApi/.gitignore" afterPath="$PROJECT_DIR$/LumenAuthorApi/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LumenAuthorApi/app/Http/Controllers/Author/AuthorController.php" afterPath="$PROJECT_DIR$/LumenAuthorApi/app/Http/Controllers/Author/AuthorController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,10 +21,10 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
-                <marker date="1546386997549" expanded="true" signature="28706:28723" ph="..." />
-                <marker date="1546386997549" expanded="true" signature="28706:28741" ph="..." />
-                <marker date="1546386997549" expanded="true" signature="28706:28754" ph="..." />
-                <marker date="1546386997549" expanded="true" signature="28706:28769" ph="..." />
+                <marker date="1546387022161" expanded="true" signature="28675:28692" ph="..." />
+                <marker date="1546387022161" expanded="true" signature="28675:28710" ph="..." />
+                <marker date="1546387022161" expanded="true" signature="28675:28723" ph="..." />
+                <marker date="1546387022161" expanded="true" signature="28675:28738" ph="..." />
               </folding>
             </state>
           </provider>
@@ -279,7 +276,7 @@
       <updated>1546335758012</updated>
       <workItem from="1546335759485" duration="608000" />
       <workItem from="1546340496255" duration="10989000" />
-      <workItem from="1546385150887" duration="1858000" />
+      <workItem from="1546385150887" duration="1926000" />
     </task>
     <task id="LOCAL-00001" summary="edited the User model to Author and made few changes">
       <created>1546373899738</created>
@@ -295,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546386250851</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created a trait named ApiResponser,&#10;created two methods for success and error response">
+      <created>1546387085535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546387085535</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13455000" />
+    <option name="totallyTimeSpent" value="13523000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,7 +371,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited the User model to Author and made few changes" />
     <MESSAGE value="Created factories and database migrations,&#10;Created Author model and Author controller in respected directory,&#10;created routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created factories and database migrations,&#10;Created Author model and Author controller in respected directory,&#10;created routes" />
+    <MESSAGE value="created a trait named ApiResponser,&#10;created two methods for success and error response" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a trait named ApiResponser,&#10;created two methods for success and error response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -515,10 +520,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding>
-            <marker date="1546386997549" expanded="true" signature="28706:28723" ph="..." />
-            <marker date="1546386997549" expanded="true" signature="28706:28741" ph="..." />
-            <marker date="1546386997549" expanded="true" signature="28706:28754" ph="..." />
-            <marker date="1546386997549" expanded="true" signature="28706:28769" ph="..." />
+            <marker date="1546387022161" expanded="true" signature="28675:28692" ph="..." />
+            <marker date="1546387022161" expanded="true" signature="28675:28710" ph="..." />
+            <marker date="1546387022161" expanded="true" signature="28675:28723" ph="..." />
+            <marker date="1546387022161" expanded="true" signature="28675:28738" ph="..." />
           </folding>
         </state>
       </provider>
