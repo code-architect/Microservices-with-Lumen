@@ -11,6 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->get('/authors', 'Author\AuthorController@index');
+$router->post('/authors', 'Author\AuthorController@store');
+$router->get('/authors/{author}', 'Author\AuthorController@show');
+$router->put('/authors/{author}', 'Author\AuthorController@update');
+$router->patch('/authors/{author}', 'Author\AuthorController@update');
+$router->delete('/authors/{author}', 'Author\AuthorController@destroy');
