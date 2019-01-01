@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Author;
 
 use App\Http\Controllers\Controller;
 use App\Models\Author;
+use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class AuthorController extends Controller
 {
+    use ApiResponser;
     /**
      * Create a new controller instance.
      *
