@@ -22,12 +22,13 @@ class AuthorController extends Controller
     }
 
     /**
- * Return full list of authors
- * @return Response
- */
+    * Return full list of authors
+    * @return Response
+    */
     public function index()
     {
-
+        $authors = Author::all();
+        return $this->successResponse($authors);
     }
 
 
@@ -38,7 +39,17 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'name'      => 'required|max:254',
+            'gender'    => 'required|max:20|in:male,female',
+            'country'   => 'required|max:254',
+        ];
 
+        $this->validate($request, $rules);
+
+        $author = Author::create($request->all());
+
+        return $this->successResponse($author, Response::HTTP_CREATED);
     }
 
 
@@ -47,9 +58,10 @@ class AuthorController extends Controller
      * @param Author $author
      * @return Response
      */
-    public function show(Author $author)
+    public function show($author)
     {
-
+        $author = Author::findOrFail($author);
+        return $this->successResponse($author);
     }
 
 
@@ -57,21 +69,35 @@ class AuthorController extends Controller
      * Update author information
      * @param Request $request
      * @param $author
-     * @return Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request, $author)
     {
-
+        $rules = [
+            'name'      => 'max:254',
+            'gender'    => 'max:20|in:male,female',
+            'country'   => 'max:254',
+        ];
+        $this->validate($request, $rules);
+        $author = Author::findOrFail($author);
+        $author->fill($request->all());
+        if($author->isClean()){
+            return $this->errorResponse("Atleast one value must change", Response::HTTP_UNPROCESSABLE_ENTITY);
+        }
+        $author->save();
+        return $this->successResponse($author);
     }
 
 
     /**
      * Delete author information
      * @param $author
-     * @return Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy($author)
     {
-
+        $author = Author::findOrFail($author);
+        $author->delete();
+        return $this->successResponse($author);
     }
 }
