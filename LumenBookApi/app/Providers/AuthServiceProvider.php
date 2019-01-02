@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\User;
+use App\Models\Book;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
