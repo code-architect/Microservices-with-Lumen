@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Author;
 
 use App\Http\Controllers\Controller;
+use App\Services\AuthorService;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 
@@ -10,9 +11,15 @@ class AuthorController extends Controller
 {
     use ApiResponser;
 
-    public function __construct()
+    /**
+     * The service to consume the authors micro-service
+     * @var AuthorService
+     */
+    public $authorService;
+
+    public function __construct(AuthorService $authorService)
     {
-        //
+        $this->authorService = $authorService;
     }
 
     public function index()
