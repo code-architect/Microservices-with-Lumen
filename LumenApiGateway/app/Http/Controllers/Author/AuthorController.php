@@ -22,9 +22,10 @@ class AuthorController extends Controller
         $this->authorService = $authorService;
     }
 
+
     public function index()
     {
-
+        return $this->successResponse($this->authorService->obtainAuthors());
     }
 
 
